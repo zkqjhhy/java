@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/school/model/Teacher.java=UTF-8
+encoding//src/main/java/com/school/service/TeacherService.java=UTF-8
+encoding//src/main/java/com/school/service/impl/TeacherServiceImpl.java=UTF-8
+encoding//src/main/resources/conf/jdbc.properties=UTF-8

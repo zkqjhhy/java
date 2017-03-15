@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.school.dao.TeacherDao">
+	<insert id="saveTeacher" parameterType="com.school.model.Teacher">
+		INSERT INTO
+		teacher(gender,t_phone,t_name,t_email,t_pwd,t_state,t_time)
+		VALUES(#{gender},#{tPhone},#{tName},#{tEmail},#{password},#{tState},#{createTime})
+	</insert>
+
+	<select id="findTeacher" parameterType="String" resultType="Integer">
+		select count(1) from teacher where t_name=#{tName}
+	</select>
+	
+	<select id="findTeacherPwd" parameterType="String" resultType="String">
+		select t_pwd from teacher where t_name=#{tName}
+	</select>
+</mapper>  

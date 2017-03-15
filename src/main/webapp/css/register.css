@@ -1,0 +1,298 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style-type: none;
+	float: left;
+}
+
+input {
+	text-align: center;
+}
+
+p {
+	display: inline-block;
+}
+
+.container {
+	width: 1280px;
+	height: 800px;
+	margin: 0 auto;
+	position: relative;
+	background-color: #FFFFFF;
+}
+
+.head {
+	margin-top: 48px;
+	font-size: 24px;
+	color: #42b0ff;
+	margin-left: 540px;
+}
+
+/*body {*/
+/*background-color: #B3B3B3;*/
+/*}*/
+.partOne {
+	height: 468px;
+}
+
+.accountMsg {
+	width: 1080px;
+	height: 24px;
+	font-size: 14px;
+	color: #FFFFFF;
+	margin-top: 25px;
+	margin-left: 100px;
+	background-color: #42b0ff;
+	padding-left: 50px;
+	line-height: 20px;
+}
+
+.intMsg ul li div {
+	display: inline-block;
+	font-size: 18px;
+	/*line-height: 34px;*/
+	margin-left: 118px;
+	color: #333333;
+	margin-top: 27px;
+}
+
+.intMsg ul li div p {
+	margin-left: 8px;
+}
+
+.intMsg ul li div input {
+	height: 34px;
+	line-height: 34px;
+	width: 318px;
+	margin-left: 20px;
+	border: 1px solid #B3B3B3;
+	border-radius: 8px;
+}
+
+.Modular span {
+	float: left;
+}
+
+.Modular .chose input {
+	width: 280px;
+}
+/*单选样式*/
+.radio-btn input[type="radio"] {
+	visibility: hidden;
+}
+/*Custom radio button*/
+.radio-btn {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	float: left;
+	/*margin: 3px 7px 0 0;*/
+	cursor: pointer;
+	position: absolute;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 1px #ccc;
+	background: rgb(255, 255, 255);
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,
+		255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)),
+		color-stop(100%, rgba(237, 237, 237, 1)));
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%,
+		rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',
+		endColorstr='#ededed', GradientType=0);
+}
+
+.checkedRadio {
+	-moz-box-shadow: inset 0 0 5px 6px #42b0ff;
+	-webkit-box-shadow: inset 0 0 5px 6px #42b0ff;
+	box-shadow: inset 0 0 5px 6px #42b0ff;
+}
+
+.radio-btn i {
+	/*border: 1px solid #FFFFFF;*/
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	left: 6px;
+	top: 6px;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+}
+
+.checkedRadio i {
+	background-color: #FFFFFF;
+}
+/*样式结束*/
+.radios {
+	width: 400px;
+}
+
+.radios div {
+	position: absolute;
+}
+
+.partTwo {
+	height: 180px;
+}
+
+.partTwo .intMsg ul li div input {
+	height: 34px;
+	line-height: 34px;
+	width: 198px;
+	margin-left: 20px;
+	border: 1px solid #B3B3B3;
+	border-radius: 8px;
+}
+
+.partTwo .intMsg ul li div {
+	display: inline-block;
+	font-size: 18px;
+	line-height: 34px;
+	margin-left: 159px;
+	color: #333333;
+	margin-top: 27px;
+}
+
+.btn {
+	cursor: pointer;
+	width: 400px;
+	height: 48px;
+	line-height: 48px;
+	background-color: #42b0ff;
+	color: #FFFFFF;
+	font-size: 18px;
+	border-radius: 8px;
+	text-align: center;
+	margin: 55px auto;
+}
+
+.choseImg {
+	position: absolute;
+	margin-left: -3%;
+	margin-top: 3px;
+}
+
+.choseImg1 {
+	position: absolute;
+	margin-left: 22%;
+	margin-top: 3px;
+}
+
+.choseImg2 {
+	position: absolute;
+	margin-left: 46%;
+	margin-top: 3px;
+}
+
+.choseImg3 {
+	position: absolute;
+	margin-left: -20%;
+	margin-top: 3px;
+}
+
+select {
+	appearance: none;
+	height: 34px;
+	border: 1px solid #B3B3B3;
+	border-radius: 8px;
+	width: 320px;
+	margin-left:18px;
+	height: 34px;
+	padding-left: 15px;
+	color: #333333;
+	font-size: 14px;
+	border: 1px solid #B3B3B3;
+	border-radius: 8px;
+}
+
+.intMsg ul li .hidden1 {
+	margin-top: 0px;
+	display: inline-block;
+	width: 23%;
+	overflow: hidden;
+	border: 1px solid #B3B3B3;
+	border-radius: 8px;
+	margin-left: 21px;
+	position: absolute;
+}
+
+.intMsg ul li .hidden2 {
+	display: inline-block;
+	width: 23%;
+	overflow: hidden;
+	border: 1px solid #B3B3B3;
+	border-radius: 8px;
+	margin-left: 331px;
+	position: absolute;
+	margin-top: 0px;
+}
+
+.intMsg ul li .hidden3 {
+	margin-top: 0px;
+	display: inline-block;
+	width: 23%;
+	overflow: hidden;
+	border: 1px solid #B3B3B3;
+	border-radius: 8px;
+	margin-left: 657px;
+	position: absolute;
+}
+
+#list {
+	cursor: pointer;
+	display: none;
+	position: absolute;
+	margin-left: 30%;
+	z-index: 99;
+	background-color: #8e8e8e;
+	width: 150px;
+}
+
+#list ul li {
+	color: #ffffff;
+	margin-left: 40%;
+}
+
+#listTwo {
+	cursor: pointer;
+	display: none;
+	position: absolute;
+	margin-left: 30%;
+	z-index: 99;
+	background-color: #8e8e8e;
+	width: 150px;
+}
+
+#listTwo ul li {
+	color: #ffffff;
+	margin-left: 28%;
+}
+
+#listThree {
+	cursor: pointer;
+	display: none;
+	position: absolute;
+	margin-left: 30%;
+	z-index: 99;
+	background-color: #8e8e8e;
+	width: 150px;
+}
+
+#listThree ul li {
+	color: #ffffff;
+	margin-left: 28%;
+}
