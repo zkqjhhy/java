@@ -3,58 +3,45 @@
  */
 package com.jhhy.road.model;
 
-import java.util.List;
-import java.util.Map;
-
 /**
  * @author zkq
  *
  */
 public class ApiResponse {
-	private int code;
-	private String message;
-	private List list;
-	private Map<String, Object> map;
+	private boolean success;// 操作成功是否
+	private String msg;// 错误成功信息
+	private Object object;// 返回值
 
-	public Map<String, Object> getMap() {
-		return map;
+	public boolean isSuccess() {
+		return success;
 	}
 
-	public void setMap(Map<String, Object> map) {
-		this.map = map;
+	public void setSuccess(boolean success) {
+		this.success = success;
 	}
 
-
-
-	public List getList() {
-		return list;
+	public String getMsg() {
+		return msg;
 	}
 
-	public void setList(List list) {
-		this.list = list;
+	public void setMsg(String msg) {
+		this.msg = msg;
 	}
 
-	public int getCode() {
-		return code;
+	public Object getObject() {
+		return object;
 	}
 
-	public void setCode(int code) {
-		this.code = code;
+	public void setObject(Object object) {
+		this.object = object;
 	}
 
-	public String getMessage() {
-		return message;
+	public ApiResponse(boolean success, String msg, Object object) {
+		this.success = success;
+		this.msg = msg;
+		this.object = object;
 	}
 
-	public void setMessage(String message) {
-		this.message = message;
+	public ApiResponse() {
 	}
-
-	/*
-	 * public void setAttribute(String string, List<Teacher> teacher) { // TODO
-	 * Auto-generated method stub
-	 * 
-	 * }
-	 */
-
 }

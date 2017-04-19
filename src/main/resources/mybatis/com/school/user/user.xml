@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jhhy.road.dao.UserDao">
+	<resultMap id="baseMap" type="com.jhhy.road.model.AdminRequest">
+		<result column="u_uname" property="userNumber" />
+		<result column="u_pwd" property="userPwd" />
+		<result column="user_name" property="userName" />
+		<!-- <result column="t_phone" property="tPhone" /> <result column="t_state" 
+			property="tState" /> <result column="t_pwd" property="password" /> -->
+	</resultMap>
+	<!-- 判断是否有这个用户 -->
+	<select id="queryUser" parameterType="String" resultType="Integer">
+		select
+		count(1) from user where u_uname=#{userNumber}
+	</select>
+	<!-- 登陆 -->
+	<select id="findPwd" parameterType="String" resultType="String">
+		select
+		u_pwd from user where u_uname=#{userNumber}
+	</select>
+</mapper>  
