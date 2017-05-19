@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jhhy.road.dao.CarDao">
+	<resultMap id="baseData" type="com.jhhy.road.model.CarRequest">
+		<result column="id" property="carId" />
+		<result column="car_name" property="carName" />
+	</resultMap>
+	<!-- 新增车段 -->
+	<insert id="saveCar" parameterType="String">
+		INSERT INTO 
+		car(car_name)
+        VALUES(#{carName})
+	</insert>
+	<!--查询所有车段  -->
+	<select id="queryCar" resultType="com.jhhy.road.model.CarRequest" resultMap="baseData">
+	    select * from car 
+	</select>
+</mapper>
